@@ -22,6 +22,7 @@
 html, body {
     font-family: sans-serif;
     background-color: var(--azul-escuro);
+
 }
 
 
@@ -65,7 +66,6 @@ nav > a {
 }
 
 main {
-        fill: linear-gradient(180deg, #15025A 0%, #110050 100%); 
     height: 100%;
 }
 
@@ -90,7 +90,7 @@ main img {
     flex-direction: row-reverse;
     justify-content: space-around;
     width: 100vw;
-    height: 79vh;
+    height: 75vh;
 }
 
 .p1 {
@@ -147,7 +147,7 @@ main img {
 
 .bi {
     color: white;
-    margin-right: 10px;
+    margin-right: 14px;
 }
 
 #zap {
@@ -181,11 +181,15 @@ main a:hover {
     align-items: center;
 }
 
+#email {
+    margin-right: 20px;
+}
+
 #container3 {
     display: flex;
     background-color: #fe9611;
     color: white;
-    height: 100px;
+    height: 94px;
     align-items: center;
     font-size: 1.5em;
     justify-content: center;
@@ -193,7 +197,29 @@ main a:hover {
 
 .c3-t {
     margin: 0px;
+    margin-right: 60px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
 }
+
+#c3-t2 {
+    width: 310px;
+    margin-right: 0px;
+    position: relative;
+    left: -10px;
+}
+
+#icons {
+    width: 290px;
+    position: relative;
+    left: 10px;
+}
+
+#icons .bi:hover {
+    color: #F9A94A;
+}
+
 
 #res {
     position: relative;
@@ -211,18 +237,52 @@ main a:hover {
 
 #setinha {
     position: relative;
-    left: -64px;
-    width: 20px;
-    height: 20px;
+    left: -66.5px;
+    width: 25px;
+    height: 25px;
+}
+
+#setinha:hover {
+    background-color: #F9A94A;
+    color: white;
+    border-radius: 3px;
 }
 
 #txte {
-    width: 570px;
+    width: 550px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 15px;
     border: none;
+    letter-spacing: 1px;
 }
 
+ /* Fim entrada */
+ 
+ 
+ /* Inicio turmas */
+
+#turmas p {
+    margin-top: 50px;
+    margin-left: 370px;
+    color: #2C3E50;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.4px;
+}
+
+ iframe {
+    width: 1219px;
+    height: 742px;
+    background: #F5F9FC;
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+ /* Fim turmas */
 #p1 {
     position: relative;
     left: 200px;
@@ -279,17 +339,20 @@ section {
     height: 470px;
     align-items: center;
     flex-flow: wrap;
+    background-color: #F5F5F5;
 }
 
 .titulo {
     font-size: 26px;
     color: #2C3E50;
     width: 600px;
+    letter-spacing: 1.4px;
 }
 
 .conteudo {
-    font-size: 16px;
+    font-size: 17px;
     width: 600px;
+    letter-spacing: 1px;
 }
 
 .a1-1 {
@@ -300,7 +363,7 @@ section {
 
 #a2 {
     flex-direction: row-reverse;
-    background-color: #F5F5F5;
+    background-color: white;
 }
 
 #a1-2 {
@@ -342,14 +405,16 @@ article img {
 }
 
 #mais img {
-    width: 507px;
-    height: 288px;
+    width: 508px;
+    height: 248px;
 }
 
 #mais p {
     margin-top: 30px;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
 }
 
 /* fim section2 */
@@ -377,14 +442,7 @@ article img {
 }
 
 
-iframe {
-    width: 1219px;
-    height: 742px;
-    background: #F5F9FC;
-    display: block;
-    margin: auto;
-    margin-top: 100px;
-}
+
 
 
 

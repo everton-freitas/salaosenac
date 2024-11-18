@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Hambúrguer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .menu-container {
+            position: relative;
+            display: inline-block;
+        }
+        .menu-button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .menu-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            width: 150px;
+        }
+        .menu-content a {
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+        .menu-content a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+        <div class="menu-content" id="menuOptions">
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuOptions');
+            if (menu.style.display === 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        }
+
+        // Fecha o menu se clicar fora
+        window.onclick = function(event) {
+            if (!event.target.matches('.menu-button')) {
+                const menu = document.getElementById('menuOptions');
+                if (menu.style.display === 'block') {
+                    menu.style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

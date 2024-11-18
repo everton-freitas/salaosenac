@@ -51,3 +51,16 @@ function selecionar(nome, idElemento) {
         toggleModal('modalSub', false);
     }
 }
+
+
+// menu hamburguer
+function aparecerMenu() {
+    let menu = document.getElementById('menu-oculto')
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none'
+    }
+    else {
+        menu.style.display = 'block'
+    }
+}
+

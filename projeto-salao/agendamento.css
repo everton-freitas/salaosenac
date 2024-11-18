@@ -174,8 +174,23 @@ nav {
 }
 
 
-
-
+#menu-oculto {
+    display: none;
+    position: absolute;
+    left: 4px;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 150px;
+}
+#menu-oculto a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+#menu-oculto a:hover {
+    background-color: #f1f1f1;
+}
 
 
 .botao:hover {
