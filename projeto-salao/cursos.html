@@ -14,13 +14,17 @@
 
         #div1 {
             height: 100%;
+            display: flex;
         }
 
         #container {
             display: flex;
-            background: #F5F9FC;
-            width: 1200px;
+            background: #F5F9FC; 
+            flex-wrap: nowrap;
+            flex: 1 1 auto;
+            width: 100vw;
             height: 742px;
+            
             margin: 0;
             padding: 0;
         }
@@ -28,6 +32,7 @@
         #container2 {
             display: flex;
             flex-wrap: wrap;
+            flex: 0 1 auto;
         }
 
         .d {
@@ -38,28 +43,83 @@
 
         #d1 {
             margin-left: 40px;
-            width: 273px;
+            width: 21.8vw;
             height: 156px;
         }
 
         #titulo {
             background: #F90;
-            width: 273px;
+            width: 21.8vw;
             height: 48px;
         }
 
         .cursos {
-            width: 365px;
-            height: 258px;
+            width: 27.8vw;
+            height: 30vh;
             margin-right: 50px;
-            background-color: white;
+            background-color: rgb(255, 255, 255);
             margin-top: 50px;
         }
 
         .titulo2 {
-            width: 365px;
+            width: 27.8vw;
             height: 78px;
             background: #004587;
+        }
+
+        @media screen and (max-width: 975px) {
+    
+            #container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #container2 {
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                left: 10px;
+            }
+
+            #titulo {
+                width: 40vw;
+            }
+
+            #d1 {
+                width: 40vw;
+            }
+
+            .titulo2 {
+                width: 35vw;
+            }
+
+            .cursos {
+                width: 35vw;
+
+            }
+        }
+
+        @media screen and (max-width: 875px) {
+            #container2 {
+                flex-direction: column;
+            }
+
+            .cursos {
+                width: 60vw;
+            }
+
+            .titulo2 {
+                width: 60vw;
+            }
+
+            #titulo {
+                width: 45vw;
+            }
+
+            #d1 {
+                width: 45vw;
+            }
+            
         }
     </style>
 </head>
