@@ -456,9 +456,6 @@ article img {
 
 
 
-
-
-
 @media screen and (max-width: 1370px) {
 
     #container3 {
@@ -658,6 +655,7 @@ article img {
     #container1 {
         margin-left: 100px;
     }
+
 }
 
 
@@ -714,14 +712,67 @@ article img {
         width: 90px;
         height: 60px;
         position: relative;
-        left: -80px;
+        left: -20px;
+    }
+
+    #container1 {
+        height: 80px;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    header {
+        background-color: #0c0038;
+    }
+
+    .container3-1 {
+        margin-bottom: 0px;
     }
 
     #container2-1 {
         margin-left: 0px;
     }
 
+    #login {
+        display: none;
+    }
+
+    #entrada {
+        height: 100%;
+    }
+
+    #menu-h {
+        position: relative;
+        right: 80px;
+        top: -0px;
+    }
+    #c3-t3 {
+        width: 300px;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    #txte {
+        width: 300px;
+        position: relative;
+        left: 35px;
+    }
+
+    #email {
+        position: relative;
+        left: 300px;
+        top: 15px;
+        display: none;
+    }
+
+    #c3-t2 {
+        width: 300px;
+        text-align: center;
+    }
+
+
     #salao {
+        margin-top: 0px;
         font-size: 30px;
         margin-bottom: 5px;
     }
@@ -741,9 +792,61 @@ article img {
         font-size: 22px;
     }
 
+    #container3 {
+        height: 230px;
+    }
+
     #sas {
         width: 300px;
         font-size: 16px;
+    }
+
+    #turmas p {
+        font-size: 20px;
+        text-align: justify;
+        width: 87vw;
+        margin-left: 25px;
+    }
+
+    #res {
+        position: relative;
+        left: -5px;
+    }
+
+    #setinha {
+        position: relative;
+        left: -32px;
+    }
+
+    .titulo {
+        width: 95vw;
+        font-size: 18px;
+    }
+
+    #salao {
+        width: 340px;
+    }
+
+    #container2-1-2 {
+        width: 340px;
+    }
+
+    .conteudo {
+        width: 90vw;
+        text-align: justify;
+    }
+
+    .a1 img {
+        width: 90vw;
+    }
+
+    .a1-1 {
+        width: 90vw;
+    }
+
+
+    #funcionamento {
+        width: 340px;
     }
 
 }
